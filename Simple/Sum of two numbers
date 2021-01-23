@@ -1,0 +1,17 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+float sumOfTwo(float x, float y) {
+  float result = x + y;
+return result;
+}
+
+int main() {
+  float a = 34;
+  float b = 67.5;
+  
+  cout << sumOfTwo(a, b) << endl;
+return 0;
+}
