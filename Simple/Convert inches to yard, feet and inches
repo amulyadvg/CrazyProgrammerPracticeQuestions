@@ -1,0 +1,21 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int inches;
+  int feet;
+  int yard;
+  
+  cin >> inches;
+ 
+  yard = inches / 36;
+  inches = inches % 36;
+  feet = inches / 12;
+  inches = inches % 12;
+  
+  cout << yard << " " << feet << " " << inches << endl;
+  
+return 0;
+}
