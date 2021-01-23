@@ -1,0 +1,37 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a[20];
+  int i, n;
+  int ele, pos, flag;
+  
+  cout << "Enter number of elements: " << endl;
+  cin >> n;
+  
+  cout << "Enter elements: " << endl;
+  for (i=0; i < n; i++) {
+    cin >> a[i];
+  }
+  
+  cout << "Enter search element: " << endl;
+  cin >> ele;
+  
+  for (i = 0; i < n; i++) {
+      if (a[i] == ele) {
+        pos = i;
+        flag++;
+      }
+  }
+  
+  if(flag) {
+  cout << "Element: " << ele << " found in position: " << pos << endl;
+  }
+  else {
+  cout << "Element not found in array" << endl;
+  }
+  
+return 0;
+}
