@@ -1,0 +1,15 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  float p, r, t;
+  float CI = 0;
+  
+  cin >> p >> r >> t;
+  CI = p * pow(1+r, t);
+  
+  cout << CI << endl;
+return 0;
+}
