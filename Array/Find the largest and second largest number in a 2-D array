@@ -1,0 +1,42 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a[20][20];
+  int i, j, m, n;
+  int lar = 1;
+  int secLar = 0;
+  
+  cout << "Enter number of elements: " << endl;
+  cin >> m >> n;
+  
+  cout << "Enter array elements: " << endl;
+  for (i=0; i < m; i++) {
+    for (j=0; j < n; j++) {
+      cin >> a[i][j];
+    }
+  }
+  
+  for (i=0; i < m; i++) {
+    for (j=0; j < n; j++) {
+      if (a[i][j] > lar) {
+        lar = a[i][j];
+      }
+    }
+  }
+  
+  for (i=0; i < m; i++) {
+    for (j=0; j < n; j++) {
+      if (a[i][j] > secLar && a[i][j] < lar) {
+        secLar = a[i][j];
+      }
+    }
+  }
+  
+  cout << "Largest number: " << lar << endl;
+  cout << "Second largest number: " << secLar << endl;
+  
+return 0;
+}
