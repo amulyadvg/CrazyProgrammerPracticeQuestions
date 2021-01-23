@@ -1,0 +1,19 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+  int a, b, c;
+  int sum = 0;
+  float avg = 0;
+  
+  cin >> a >> b >> c;
+  
+  sum = (a + b + c);
+  avg = sum / 3;
+  
+  cout << "Sum of three numbers: " << sum << endl;
+  cout << "Average of three numbers: " << avg << endl;
+  
+return 0;
+}
