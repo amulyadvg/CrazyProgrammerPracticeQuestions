@@ -1,0 +1,38 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a[20][20];
+  int i, j, m;
+  
+  cout << "Enter rows and columns of square matrix: " << endl;
+  cin >> m;
+  
+  cout << "Enter elements of matrix A: " << endl;
+  for (i=0; i < m; i++) {
+    for (j=0; j < m; j++) {
+      cin >> a[i][j];
+    }
+  }
+  
+  int upper[20][20];
+  int lower[20][20];
+  
+  for (i=0; i < m; i++) {
+    for (j=0; j < m; j++) {
+      if (i > j) {
+      lower[i][j] = a[i][j];
+      cout << endl;
+      cout << lower[i][j] << " " << endl;
+      }
+      else if (i < j) {
+      upper[i][j] = a[i][j];
+      cout << endl;
+      cout << upper[i][j] << " " << endl;
+      }
+    }
+  }
+return 0;
+}
