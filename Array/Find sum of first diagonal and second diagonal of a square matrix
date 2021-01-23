@@ -1,0 +1,42 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a[20][20];
+  int i, j, n;
+  int sum1 = 0;
+  int sum2 = 0;
+  
+  cout << "Enter rows and columns of matrix A: " << endl;
+  cin >> n;
+  
+  cout << "Enter matrix elements: " << endl;
+  for (i=0; i < n; i++) {
+    for (j=0; j < n; j++) {
+      cin >> a[i][j];
+    }
+  }
+  
+   for (i=0; i < n; i++) {
+    for (j=0; j < n; j++) {
+      if (i == j) {
+        sum1 += a[i][j];
+      }
+    }
+  }
+  
+  for (i=0; i < n; i++) {
+    for (j=0; j < n; j++) {
+      if (i == n - j - 1) {
+        sum2 += a[i][j];
+      }
+    }
+  }
+  cout << endl;
+  cout << "Sum of first diagonal matrix: " << sum1 << endl;
+  cout << "Sum of second diagonal matrix: " << sum2 << endl;
+  
+return 0;
+}
