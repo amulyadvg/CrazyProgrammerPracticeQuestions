@@ -1,0 +1,35 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a[20];
+  int ele, pos, i, n;
+  
+  cout << "Enter number of elements: " << endl;
+  cin >> n;
+  
+  cout << "Enter array elements: " << endl;
+  for (i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+  
+  cout << "Enter element to be removed: " << endl;
+  cin >> ele;
+  
+  cout << "Enter position of element: " << endl;
+  cin >> pos;
+  
+  for (i = pos; i < n; i++) {
+    ele = a[pos];
+    a[i] = a[i+1];
+  }
+  n--;
+  
+  cout << "Array after removing element is: " << endl;
+  for (i = 0; i < n; i++) {
+    cout << a[i] << " ";
+  }
+return 0;
+}
