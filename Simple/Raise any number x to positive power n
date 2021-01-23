@@ -1,0 +1,16 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int expo(int x, int n) {
+  int result = pow(x, n);
+return result;
+}
+
+int main() {
+  int a = 2;
+  int b = 3;
+  
+  cout << expo(a, b) << endl;
+return 0;
+}
