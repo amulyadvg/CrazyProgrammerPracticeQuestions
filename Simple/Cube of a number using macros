@@ -1,0 +1,16 @@
+#include <iostream>
+#include<math.h>
+#define CUBE(x) {x*x*x}
+
+using namespace std;
+
+int main() {
+  int a;
+  cin >> a;
+  int result = 0;
+  
+  result = CUBE(a);
+  cout << result << endl;
+  
+return 0;
+}
