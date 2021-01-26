@@ -1,0 +1,28 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+void leap(int year) {
+  if (year % 4 == 0) {
+    if (year % 100 == 0) {
+      if (year % 400 == 0) 
+        cout << "Leap year" << endl;
+      else 
+        cout << "Not a leap year" << endl;
+      }
+      else 
+        cout << "Leap year" << endl;
+    }
+    else 
+      cout << "Not a leap year" << endl;
+}
+
+int main() {
+  int num;
+  cout << "Enter year: " << endl;
+  cin >> num;
+  
+  leap(num);
+return 0;
+}
