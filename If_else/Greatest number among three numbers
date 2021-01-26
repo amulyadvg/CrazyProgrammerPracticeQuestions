@@ -1,0 +1,24 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+void largest(int a, int b, int c) {
+  if (a > b && a > c) {
+    cout << "Greatest is: " << a << endl;
+  } 
+  else if (b > a && b > c) {
+    cout << "Greatest is: " << b << endl;
+  }
+  else if (c > a && c > b) {
+    cout << "Greatest is: " << c << endl;
+  }
+}
+
+int main() {
+  int x, y, z;
+  cin >> x >> y >> z;
+  
+  largest(x, y, z);
+return 0;
+}
