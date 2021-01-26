@@ -1,0 +1,21 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+void OddEven(int n) {
+  if (n % 2 == 0) {
+    cout << "Number is even" << endl;
+  }
+  else if (n % 2 != 0) {
+    cout << "Number is odd" << endl;
+  }
+}
+
+int main() {
+  int num;
+  cin >> num;
+  
+  OddEven(num);
+return 0;
+}
