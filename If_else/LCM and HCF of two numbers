@@ -1,0 +1,38 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int a, b, LCM, HCF, max, min, r;
+  
+  cout << "Enter two numbers: " << endl;
+  cin >> a >> b;
+  
+  if (a > b) {
+    max = a;
+    min = b;
+  }
+  else if (b > a) {
+    max = b;
+    min = a;
+  }
+  
+  if (a == b) {
+    HCF = a;
+  }
+  else {
+    do {
+      r = max % min;
+      max = min;
+      min = r;
+    } while (r != 0);
+    
+  HCF = max;
+  }
+  LCM = (a*b) / HCF;
+  
+  cout << "LCM: " << LCM << "\n" <<  "HCF: " << HCF << endl;
+
+return 0;
+}
