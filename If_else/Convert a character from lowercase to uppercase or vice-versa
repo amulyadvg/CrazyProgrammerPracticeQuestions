@@ -1,0 +1,23 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  char a;
+  cin >> a;
+  
+  if ('a' <= a && a <= 'z') {
+    cout << "You have entered a lowercase charecter" << endl;
+    a = a - 32;
+    cout << "Uppercase charecter is: " << a << endl;
+  }
+  
+  else if ('A' <= a && a <= 'Z') {
+    cout << "You have entered a uppercase charecter" << endl;
+    a = a + 32;
+    cout << "Lowercase charecter is: " << a << endl;
+  }
+  
+return 0;
+}
