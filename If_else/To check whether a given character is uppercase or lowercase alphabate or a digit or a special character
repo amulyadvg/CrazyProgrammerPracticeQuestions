@@ -1,0 +1,23 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  char ch;
+  cout << "Enter the charecter: " << endl;
+  cin >> ch;
+  
+  if (65 <= ch && ch <= 90) {
+    cout << "Upper case" << endl;
+  }
+  else if (97 <= ch && ch <= 122) {
+    cout << "Lower case" << endl;
+  }
+  else if (48 <= ch && ch <= 57) {
+    cout << "Number" << endl;
+  }
+  else cout << "Special charecter" << endl;
+  
+return 0;
+}
