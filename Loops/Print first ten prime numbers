@@ -1,0 +1,28 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+  int count = 0;
+  int flag = 1;
+  
+  for (int i=3; i > 0 ; i++) {
+    for (int j= 2; j <= i/2; j++) {
+    
+    if (i % j != 0) {
+      flag = 0;
+      break;
+      }
+    }
+    if (flag == 1) {
+      cout << i << " ";
+      count++;
+    }
+    
+    flag = 1;
+    if (count == 10) 
+      break;
+  }
+return 0;
+}
